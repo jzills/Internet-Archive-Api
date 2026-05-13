@@ -1,0 +1,27 @@
+{
+    "created": 1609459200,
+    "d1": "ia601205.us.archive.org",
+    "d2": "ia801205.us.archive.org",
+    "dir": "/3/items/jazz-piano-collection-01",
+    "files_count": 7,
+    "item_last_updated": 1672531200,
+    "item_size": 245760000,
+    "metadata": {
+        "identifier": "jazz-piano-collection-01",
+        "title": "Jazz Piano Collection Vol. 1",
+        "creator": "Various Artists",
+        "subject": ["jazz", "piano", "music"],
+        "description": "A collection of classic jazz piano recordings.",
+        "mediatype": "audio",
+        "collection": ["opensource_audio", "audio_music"],
+        "date": "2005-03-12",
+        "language": "eng",
+        "licenseurl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "server": "ia601205.us.archive.org",
+    "uniq": 987654321,
+    "workable_servers": [
+        "ia601205.us.archive.org",
+        "ia801205.us.archive.org"
+    ]
+}

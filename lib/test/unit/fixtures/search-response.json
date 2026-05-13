@@ -1,0 +1,42 @@
+{
+    "responseHeader": {
+        "status": 0,
+        "QTime": 112,
+        "params": {
+            "q": "jazz piano",
+            "rows": "3",
+            "start": "0",
+            "output": "json"
+        }
+    },
+    "response": {
+        "numFound": 8432,
+        "start": 0,
+        "docs": [
+            {
+                "identifier": "jazz-piano-collection-01",
+                "title": "Jazz Piano Collection Vol. 1",
+                "creator": "Various Artists",
+                "mediatype": "audio",
+                "downloads": 1240,
+                "date": "2005-03-12"
+            },
+            {
+                "identifier": "classic-jazz-piano-02",
+                "title": "Classic Jazz Piano Vol. 2",
+                "creator": "Duke Ellington",
+                "mediatype": "audio",
+                "downloads": 980,
+                "date": "2003-07-04"
+            },
+            {
+                "identifier": "bop-piano-recordings",
+                "title": "Bebop Piano Recordings",
+                "creator": "Thelonious Monk",
+                "mediatype": "audio",
+                "downloads": 2100,
+                "date": "1998-11-22"
+            }
+        ]
+    }
+}

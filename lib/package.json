@@ -1,0 +1,39 @@
+{
+	"name": "internet-archive-api",
+	"version": "1.0.0",
+	"keywords": ["api", "audio", "video", "fluent", "internet-archive", "archive.org"],
+	"main": "./dist/internet-archive-api.js",
+	"types": "./dist/index.d.ts",
+	"type": "module",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/internet-archive-api.js"
+			},
+			"require": {
+				"types": "./dist/index.d.cts",
+				"default": "./dist/internet-archive-api.cjs"
+			}
+		}
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build && cp dist/index.d.ts dist/index.d.cts",
+		"test": "vitest test/unit --watch",
+		"test:integration": "vitest run --config vitest.integration.config.ts"
+	},
+	"author": "Joshua Zillwood",
+	"license": "MIT",
+	"description": "An Internet Archive (archive.org) API client library.",
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"@types/node": "^25.6.0",
+		"vite": "^8.0.10",
+		"vite-plugin-dts": "^5.0.0",
+		"vite-tsconfig-paths": "^6.1.1",
+		"vitest": "^4.1.5"
+	}
+}

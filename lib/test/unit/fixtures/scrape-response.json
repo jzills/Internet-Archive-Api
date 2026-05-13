@@ -1,0 +1,22 @@
+{
+    "items": [
+        {
+            "identifier": "ambient-sounds-01",
+            "title": "Ambient Sounds Collection",
+            "mediatype": "audio"
+        },
+        {
+            "identifier": "field-recordings-02",
+            "title": "Field Recordings Archive",
+            "mediatype": "audio"
+        },
+        {
+            "identifier": "nature-audio-03",
+            "title": "Nature Audio Library",
+            "mediatype": "audio"
+        }
+    ],
+    "count": 3,
+    "cursor": "W3sidGV4dCI6IjEyMzQ1NiJ9XQ==",
+    "total": 14200
+}

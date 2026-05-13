@@ -1,0 +1,46 @@
+{
+    "result": [
+        {
+            "name": "track01.mp3",
+            "source": "original",
+            "format": "VBR MP3",
+            "mtime": "1609459300",
+            "size": "12582912",
+            "md5": "abc123def456abc123def456abc12345",
+            "length": "324.5",
+            "title": "Track 01",
+            "bitrate": "192"
+        },
+        {
+            "name": "track01.flac",
+            "source": "original",
+            "format": "FLAC",
+            "mtime": "1609459400",
+            "size": "52428800",
+            "md5": "def456abc123def456abc123def45678"
+        },
+        {
+            "name": "track02.mp3",
+            "source": "derivative",
+            "format": "128Kbps MP3",
+            "mtime": "1609459500",
+            "size": "8388608",
+            "md5": "fed321cba654fed321cba654fed32109",
+            "length": "245.0"
+        },
+        {
+            "name": "cover.jpg",
+            "source": "original",
+            "format": "JPEG",
+            "mtime": "1609459200",
+            "size": "204800"
+        },
+        {
+            "name": "jazz-piano-collection-01_meta.xml",
+            "source": "metadata",
+            "format": "Metadata",
+            "mtime": "1609459200",
+            "size": "1024"
+        }
+    ]
+}
