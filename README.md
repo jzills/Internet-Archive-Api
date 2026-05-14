@@ -1,4 +1,4 @@
-# internet-archive-api
+# Internet-Archive-Api
 
 A TypeScript NPM package for the [Internet Archive](https://archive.org) public API. Supports searching items, retrieving metadata and file listings, and constructing download/stream URLs.
 
