@@ -100,7 +100,3 @@ npm run build       # compile to dist/
 npm test            # unit tests (vitest)
 npm run test:integration  # integration tests against live archive.org
 ```
-
-## License
-
-MIT
