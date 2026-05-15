@@ -1,7 +1,14 @@
 {
 	"name": "internet-archive-api",
-	"version": "1.0.0",
-	"keywords": ["api", "audio", "video", "fluent", "internet-archive", "archive.org"],
+	"version": "0.0.1",
+	"keywords": [
+		"api",
+		"audio",
+		"video",
+		"fluent",
+		"internet-archive",
+		"archive.org"
+	],
 	"main": "./dist/internet-archive-api.js",
 	"types": "./dist/index.d.ts",
 	"type": "module",
