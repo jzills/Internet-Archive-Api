@@ -1,5 +1,7 @@
 # Internet-Archive-Api
 
+[![NPM Version](https://img.shields.io/npm/v/internet-archive-api)](https://www.npmjs.com/package/internet-archive-api) [![NPM Downloads](https://img.shields.io/npm/d18m/internet-archive-api)](https://www.npmjs.com/package/internet-archive-api)
+
 A TypeScript NPM package for the [Internet Archive](https://archive.org) public API. Supports searching items, retrieving metadata and file listings, and constructing download/stream URLs.
 
 ## Features
