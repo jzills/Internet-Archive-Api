@@ -1,4 +1,4 @@
-export { default as InternetArchive } from "./internet-archive";
+export { default as InternetArchive, InternetArchiveError } from "./internet-archive";
 export { default as InternetArchiveRequestBuilder } from "./internet-archive-request-builder";
 export { default as InternetArchiveScrapeBuilder } from "./internet-archive-scrape-builder";
 export { default as QueryBuilder } from "./builders/query-builder";
