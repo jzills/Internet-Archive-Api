@@ -6,6 +6,13 @@ import { ScrapeResponse } from "./types/scrape-response";
 import { SearchResponse } from "./types/search-response";
 import { StreamOptions } from "./types/stream-options";
 
+export class InternetArchiveError extends Error {
+    constructor(readonly status: number, message: string) {
+        super(message);
+        this.name = "InternetArchiveError";
+    }
+}
+
 export default class InternetArchive {
     readonly BASE_URL: string = "https://archive.org";
 
@@ -14,7 +21,7 @@ export default class InternetArchive {
         if (response.ok) {
             return response.json();
         } else {
-            throw new Error(await response.text());
+            throw new InternetArchiveError(response.status, await response.text());
         }
     };
 
@@ -23,7 +30,7 @@ export default class InternetArchive {
         if (response.ok) {
             return response.json();
         } else {
-            throw new Error(await response.text());
+            throw new InternetArchiveError(response.status, await response.text());
         }
     };
 
@@ -32,7 +39,7 @@ export default class InternetArchive {
         if (response.ok) {
             return response.json();
         } else {
-            throw new Error(await response.text());
+            throw new InternetArchiveError(response.status, await response.text());
         }
     };
 
@@ -42,7 +49,7 @@ export default class InternetArchive {
             const data: { result: ItemFile[] } = await response.json();
             return data.result;
         } else {
-            throw new Error(await response.text());
+            throw new InternetArchiveError(response.status, await response.text());
         }
     };
 
@@ -55,7 +62,7 @@ export default class InternetArchive {
         if (response.ok) {
             return response;
         } else {
-            throw new Error(await response.text());
+            throw new InternetArchiveError(response.status, await response.text());
         }
     };
 
