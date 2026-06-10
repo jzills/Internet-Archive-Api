@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { vi } from "vitest";
-import InternetArchive from "../../src/internet-archive";
+import InternetArchive, { InternetArchiveError } from "../../src/internet-archive";
 import InternetArchiveRequestBuilder from "../../src/internet-archive-request-builder";
 import InternetArchiveScrapeBuilder from "../../src/internet-archive-scrape-builder";
 import { lastFetchUrl } from "./helpers";
@@ -24,9 +24,13 @@ describe("InternetArchive.search", () => {
     it("throws on error response", async () => {
         vi.mocked(fetch).mockResolvedValueOnce({
             ok: false,
+            status: 400,
             text: () => Promise.resolve("Bad request"),
         } as any);
-        await expect(ia.search(new InternetArchiveRequestBuilder())).rejects.toThrow("Bad request");
+        const error = await ia.search(new InternetArchiveRequestBuilder()).catch(e => e);
+        expect(error).toBeInstanceOf(InternetArchiveError);
+        expect(error.status).toBe(400);
+        expect(error.message).toBe("Bad request");
     });
 });
 
